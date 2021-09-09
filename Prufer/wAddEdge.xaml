@@ -1,0 +1,23 @@
+﻿<Window x:Class="Prufer.wAddEdge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prufer"
+        mc:Ignorable="d"
+        WindowStyle="None" Height="80" Width="150" ResizeMode="NoResize" Loaded="Window_Loaded" BorderThickness="1" BorderBrush="#414141" Background="#7c8e51">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cb_node1" Grid.Row="0" Grid.Column="0" Width="60" Height="30" IsReadOnly="True"/>
+        <ComboBox x:Name="cb_node2" Grid.Row="0" Grid.Column="1" Width="60" Height="30" IsReadOnly="True"/>
+        <Button x:Name="b_create" Grid.Row="1" Grid.Column="1" Width="60" Height="30" Content="Создать" Click="b_create_Click"/>
+        <Button x:Name="b_cancel" Grid.Row="1" Grid.Column="0" Width="60" Height="30" Content="Отмена" Click="b_cancel_Click"/>
+    </Grid>
+</Window>
